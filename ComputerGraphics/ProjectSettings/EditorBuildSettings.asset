@@ -9,9 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/GameScene.unity
+    path: Assets/Scenes/GameScene.unity
     guid: eb431c5c9bb7c974b936099878e8c338
   - enabled: 1
-    path: Assets/PassportScene.unity
+    path: Assets/Scenes/PassportScene.unity
     guid: 997fbc8da5b24ad4ebb705bba013f5d2
   m_configObjects: {}
