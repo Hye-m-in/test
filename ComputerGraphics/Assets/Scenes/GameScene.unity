@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 858157380}
   - component: {fileID: 858157379}
   - component: {fileID: 858157378}
-  - component: {fileID: 858157377}
+  - component: {fileID: 858157382}
   - component: {fileID: 858157381}
   m_Layer: 5
   m_Name: PassportButton
@@ -339,18 +339,6 @@ RectTransform:
   m_AnchoredPosition: {x: 481, y: -481}
   m_SizeDelta: {x: 1050, y: 1220}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &858157377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 858157375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9db24d2b5920324fad2cc48717115ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &858157378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -395,9 +383,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 858157377}
-        m_TargetAssemblyTypeName: PassportDirector, Assembly-CSharp
-        m_MethodName: SceneChange
+      - m_Target: {fileID: 858157382}
+        m_TargetAssemblyTypeName: SceneDirector, Assembly-CSharp
+        m_MethodName: PassportSceneChange
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -455,6 +443,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38326dfb6b52c6343840e1690d6d8f75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &858157382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858157375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62fd6f69502f423498d766c39a3025ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1229340178
