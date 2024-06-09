@@ -26,4 +26,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/USA/RSCOverScene.unity
     guid: 64adb39a2f843404ea27a3e4e28d263c
+  - enabled: 1
+    path: Assets/Scenes/Paris/ParisStartScene.unity
+    guid: 9f0096fbe6e6c0346abdeb0e92ba783c
+  - enabled: 1
+    path: Assets/Scenes/Paris/ParisGameScene.unity
+    guid: 4ba3a50b4544a7043ae2b66eccf4c62f
+  - enabled: 1
+    path: Assets/Scenes/Paris/ParisClearScene.unity
+    guid: fd49d85a21ee33443a136617b75199c2
   m_configObjects: {}

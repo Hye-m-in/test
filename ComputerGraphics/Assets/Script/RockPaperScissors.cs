@@ -25,7 +25,7 @@ public class RockPaperSissors : MonoBehaviour
 
     private bool isWaiting = false; //대기 상태 판단 변수
 
-    public void OnRockButtonClick()
+    public void OnRockButtonClick()  
     {
         if (!isWaiting)
         {
@@ -80,7 +80,7 @@ public class RockPaperSissors : MonoBehaviour
         }
         else if((user.sprite == rock && com.sprite == scissors) ||
                 (user.sprite == scissors && com.sprite == paper) ||
-                (user.sprite == paper && com.sprite == rock))
+                (user.sprite == paper && com.sprite == rock))  //이기는 경우
         {
             result_text = "Win";
             user_count += 1;
@@ -94,7 +94,7 @@ public class RockPaperSissors : MonoBehaviour
         this.result.GetComponent<TextMeshProUGUI>().text = result_text;
         this.count.GetComponent<TextMeshProUGUI>().text = user_count.ToString() + " : " + com_count.ToString();
 
-        WaitAndReset(1.0f);
+        StartCoroutine(WaitAndReset(1.0f));
         
     }
     public void SceneChange()
@@ -117,12 +117,14 @@ public class RockPaperSissors : MonoBehaviour
 
     IEnumerator WaitAndReset(float waitTime)
     {
-        isWaiting = true;
-        yield return new WaitForSeconds(waitTime);
-        user.sprite = question;
-        com.sprite = question;
-        this.result.GetComponent<TextMeshProUGUI>().text = "";
-        isWaiting = false;
+        if((user_count != 3) && (com_count != 3)){
+            isWaiting = true;
+            yield return new WaitForSeconds(waitTime);
+            user.sprite = question;
+            com.sprite = question;
+            this.result.GetComponent<TextMeshProUGUI>().text = "";
+            isWaiting = false;
+        }
     }
     // Start is called before the first frame update
     void Start()
@@ -134,7 +136,10 @@ public class RockPaperSissors : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SceneChange();
+        if (!isWaiting)
+        {
+            SceneChange();
+        }
     }
 }
 /* 

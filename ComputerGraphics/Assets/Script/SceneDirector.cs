@@ -20,11 +20,19 @@ public class SceneDirector : MonoBehaviour
     {
         SceneManager.LoadScene("USAstartScene"); 
     }
-    public void USAgameSceneChange() //USA 게임시작 Scene으로 이동
+    public void USAgameSceneChange() //USA 게임 Scene으로 이동
     {
         SceneManager.LoadScene("USAGameScene");
     }
-void Start()
+    public void ParisstartSceneChange() //Paris 게임시작 Scene으로 이동
+    {
+        SceneManager.LoadScene("ParisStartScene");
+    }
+    public void ParisgameSceneChange() //Paris 게임시작 Scene으로 이동
+    {
+        SceneManager.LoadScene("ParisGameScene");
+    }
+    void Start()
     {
         
     }
