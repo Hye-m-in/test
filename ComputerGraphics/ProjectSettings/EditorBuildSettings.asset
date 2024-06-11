@@ -9,9 +9,30 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/GameScene.unity
+    path: Assets/Scenes/GameScene.unity
     guid: eb431c5c9bb7c974b936099878e8c338
   - enabled: 1
-    path: Assets/PassportScene.unity
+    path: Assets/Scenes/PassportScene.unity
     guid: 997fbc8da5b24ad4ebb705bba013f5d2
+  - enabled: 1
+    path: Assets/Scenes/USA/USAstartScene.unity
+    guid: 183444df522c51b438c459beb4922a04
+  - enabled: 1
+    path: Assets/Scenes/USA/USAGameScene.unity
+    guid: feac7e138226ee049ab06e341cf9fd36
+  - enabled: 1
+    path: Assets/Scenes/USA/RSCClearScene.unity
+    guid: 40a7f75bbf01ad44a81f0b856be38cc4
+  - enabled: 1
+    path: Assets/Scenes/USA/RSCOverScene.unity
+    guid: 64adb39a2f843404ea27a3e4e28d263c
+  - enabled: 1
+    path: Assets/Scenes/Paris/ParisStartScene.unity
+    guid: 9f0096fbe6e6c0346abdeb0e92ba783c
+  - enabled: 1
+    path: Assets/Scenes/Paris/ParisGameScene.unity
+    guid: 4ba3a50b4544a7043ae2b66eccf4c62f
+  - enabled: 1
+    path: Assets/Scenes/Paris/ParisClearScene.unity
+    guid: fd49d85a21ee33443a136617b75199c2
   m_configObjects: {}
