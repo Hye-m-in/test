@@ -8,7 +8,7 @@ public class BlackCloudController : MonoBehaviour
     public Transform endPos;
     public Transform desPos;
     public float speed;
-    
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,8 +21,8 @@ public class BlackCloudController : MonoBehaviour
     void FixedUpdate()
     {
         transform.position = Vector2.MoveTowards(transform.position, desPos.position, Time.deltaTime * speed);
-    
-        if(Vector2.Distance(transform.position, desPos.position) <= 0.05f)
+
+        if (Vector2.Distance(transform.position, desPos.position) <= 0.05f)
         {
             if (desPos == endPos)
                 desPos = startPos;
