@@ -2,14 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rigid2D;
     Animator animator;
-    float jumpForce = 600.0f;
+    bool isOnBlackcloud = false;
+    float jumpForce = 550.0f;
     float walkForce = 30.0f;
     float maxWalkSpeed = 2.0f;
+    Vector3 defaultScale = new Vector3(1.3f, 1.3f, 1.3f);
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +20,7 @@ public class PlayerController : MonoBehaviour
         Application.targetFrameRate = 60;
         this.rigid2D = GetComponent<Rigidbody2D>();
         this.animator = GetComponent<Animator>();
+        transform.localScale = defaultScale;
     }
 
     // Update is called once per frame
