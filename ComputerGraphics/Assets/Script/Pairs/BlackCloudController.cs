@@ -8,6 +8,7 @@ public class BlackCloudController : MonoBehaviour
     public Transform endPos;
     public Transform desPos;
     public float speed;
+    private Vector3 defaultScale = new Vector3(1.3f, 1.3f, 1.3f);
 
 
     // Start is called before the first frame update
@@ -22,7 +23,7 @@ public class BlackCloudController : MonoBehaviour
     {
         transform.position = Vector2.MoveTowards(transform.position, desPos.position, Time.deltaTime * speed);
 
-        if (Vector2.Distance(transform.position, desPos.position) <= 0.05f)
+        if (Vector2.Distance(transform.position, desPos.position) <= 0.05f) //거리가 0.05f 이하일 때 목적지 변경
         {
             if (desPos == endPos)
                 desPos = startPos;
@@ -35,14 +36,17 @@ public class BlackCloudController : MonoBehaviour
         if (collision.transform.CompareTag("Player"))
         {
             collision.transform.SetParent(transform);
+            collision.transform.localScale = defaultScale;
         }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
+        
         if (collision.transform.CompareTag("Player"))
         {
             collision.transform.SetParent(null);
-        }
+            collision.transform.localScale = defaultScale;
+        }      
     }
 }

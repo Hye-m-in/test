@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     float maxWalkSpeed = 2.0f;
     Vector3 defaultScale = new Vector3(1.3f, 1.3f, 1.3f);
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +50,7 @@ public class PlayerController : MonoBehaviour
         //움직이는 방향에 따라 이미지 반전
         if (key != 0)
         {
-            transform.localScale = new Vector3(key * 1.3f, 1.3f, 1);
+            transform.localScale = new Vector3(key * 1.3f, 1.3f, 1.3f);
         }
 
         //플레이어 속도에 맞춰 애니메이션 속도 변경
@@ -71,7 +72,27 @@ public class PlayerController : MonoBehaviour
     //꼭대기 도착
     void OnTriggerEnter2D(Collider2D other)
     {
+        PlayerPrefs.SetInt("Parissuccess", 1);
         SceneManager.LoadScene("ParisClearScene");
+
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        // 구름과 충돌했을 때 크기 유지
+        if (collision.gameObject.CompareTag("Blackcloud"))
+        {
+            transform.localScale = defaultScale;
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        // 구름을 벗어났을 때도 크기 유지
+        if (collision.gameObject.CompareTag("Blackcloud"))
+        {
+            transform.localScale = defaultScale;
+        }
     }
 
 }

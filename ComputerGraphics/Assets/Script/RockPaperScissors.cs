@@ -102,6 +102,7 @@ public class RockPaperSissors : MonoBehaviour
         if (user_count == 3) //유저가 3판 이기면 Clear 씬으로 전환
         {
             Wait(3.0f);
+            PlayerPrefs.SetInt("USAsuccess", 1);
             SceneManager.LoadScene("RSCClearScene");
         }
         else if (com_count == 3) //컴퓨터가 3판 이기면 Over씬으로 전환
