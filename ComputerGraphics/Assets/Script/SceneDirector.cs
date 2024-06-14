@@ -15,23 +15,45 @@ public class SceneDirector : MonoBehaviour
         SceneManager.LoadScene("PassportScene"); 
     }
     
-    //USA게임
-    public void USAstartSceneChange() //USA 게임시작 Scene으로 이동
+    // USA 게임
+    public void USAstartSceneChange() // USA 게임시작 Scene으로 이동
     {
         SceneManager.LoadScene("USAstartScene"); 
     }
-    public void USAgameSceneChange() //USA 게임 Scene으로 이동
+    public void USAgameSceneChange() // USA 게임 Scene으로 이동
     {
         SceneManager.LoadScene("USAGameScene");
     }
-    public void ParisstartSceneChange() //Paris 게임시작 Scene으로 이동
+    // Paris 게임
+    public void ParisstartSceneChange() // Paris 게임시작 Scene으로 이동
     {
         SceneManager.LoadScene("ParisStartScene");
     }
-    public void ParisgameSceneChange() //Paris 게임시작 Scene으로 이동
+    public void ParisgameSceneChange() // Paris 게임시작 Scene으로 이동
     {
         SceneManager.LoadScene("ParisGameScene");
     }
+
+    // Japan 게임
+    public void JapanstartSceneChange() // Japan 게임시작 Scene으로 이동
+    {
+        SceneManager.LoadScene("JapanstartScene");
+    }
+    public void JapangameSceneChange() // Japan 게임 Scene으로 이동
+    {
+        SceneManager.LoadScene("JapanGameScene");
+    }
+
+    // Argentina 게임
+    public void ArgentinastartSceneChange() // Argentina 게임시작 Scene으로 이동
+    {
+        SceneManager.LoadScene("ArgentinaStartScene");
+    }
+    public void ArgentinagameSceneChange() // Argentina 게임시작 Scene으로 이동
+    {
+        SceneManager.LoadScene("ArgentinaGameScene");
+    }
+
     void Start()
     {
         
