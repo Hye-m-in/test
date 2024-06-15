@@ -35,4 +35,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Paris/ParisClearScene.unity
     guid: fd49d85a21ee33443a136617b75199c2
+  - enabled: 1
+    path: Assets/Scenes/Japan/JapanStartScene.unity
+    guid: 49043e040053a4d4ea2c05b4086773b4
+  - enabled: 1
+    path: Assets/Scenes/Argentina/ArgentinaStartScene.unity
+    guid: 194ec55b0bc4be8418d8710635fd28ae
+  - enabled: 1
+    path: Assets/Scenes/Argentina/ArgentinaGameScene.unity
+    guid: 81b4264e580712a46a29caa62dd3464c
+  - enabled: 1
+    path: Assets/Scenes/Argentina/ArgentinaClearScene.unity
+    guid: d24350b60c588ce439ed895e31c40ae4
+  - enabled: 1
+    path: Assets/Scenes/Argentina/ArgentinaOverScene.unity
+    guid: bb1734eb78e4c0846baad77d2caad46a
   m_configObjects: {}

@@ -959,6 +959,7 @@ GameObject:
   - component: {fileID: 1525745895}
   - component: {fileID: 1525745894}
   - component: {fileID: 1525745893}
+  - component: {fileID: 1525745897}
   - component: {fileID: 1525745896}
   m_Layer: 5
   m_Name: ARGButton
@@ -1029,7 +1030,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1525745894}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1525745897}
+        m_TargetAssemblyTypeName: SceneDirector, Assembly-CSharp
+        m_MethodName: ARGstartSceneChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1525745894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1078,6 +1091,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38326dfb6b52c6343840e1690d6d8f75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1525745897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525745891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62fd6f69502f423498d766c39a3025ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1576429275

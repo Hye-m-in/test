@@ -24,13 +24,32 @@ public class SceneDirector : MonoBehaviour
     {
         SceneManager.LoadScene("USAGameScene");
     }
+
     public void ParisstartSceneChange() //Paris 게임시작 Scene으로 이동
     {
         SceneManager.LoadScene("ParisStartScene");
     }
-    public void ParisgameSceneChange() //Paris 게임시작 Scene으로 이동
+    public void ParisgameSceneChange() //Paris 게임 Scene으로 이동
     {
         SceneManager.LoadScene("ParisGameScene");
+    }
+
+    public void ARGstartSceneChange() //ARG 게임시작 Scene으로 이동
+    {
+        SceneManager.LoadScene("ArgentinaStartScene");
+    }
+    public void ARGgameSceneChange() //ARG 게임 Scene으로 이동
+    {
+        SceneManager.LoadScene("ArgentinaGameScene");
+    }
+
+    public void JapanstartSceneChange() //Japan 게임시작 Scene으로 이동
+    {
+        SceneManager.LoadScene("JApanStartScene");
+    }
+    public void JapangameSceneChange() //Japan 게임 Scene으로 이동
+    {
+        SceneManager.LoadScene("JapanGameScene");
     }
     void Start()
     {
