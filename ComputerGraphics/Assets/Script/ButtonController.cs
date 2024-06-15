@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class ButtonController : MonoBehaviour
 {
-    Image passport;
+    Image button;
 
     // Start is called before the first frame update
     void Start()
     {
-        passport = GetComponent<Image>();
-        passport.alphaHitTestMinimumThreshold = 0.1f; //붙투명한 부분만 클릭 인식
+        button = GetComponent<Image>();
+        button.alphaHitTestMinimumThreshold = 0.1f; //붙투명한 부분만 클릭 인식
     }
 
     // Update is called once per frame
