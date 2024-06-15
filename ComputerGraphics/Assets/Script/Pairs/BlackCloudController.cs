@@ -33,20 +33,21 @@ public class BlackCloudController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.transform.CompareTag("Player"))
+        //player 자식 오브젝트로 지정
+        if (collision.transform.CompareTag("Player")) 
         {
             collision.transform.SetParent(transform);
-            collision.transform.localScale = defaultScale;
+            collision.transform.localScale = defaultScale; //스케일 유지
         }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        
-        if (collision.transform.CompareTag("Player"))
+        //player 자식 오브젝트 해제
+        if (collision.transform.CompareTag("Player")) 
         {
             collision.transform.SetParent(null);
-            collision.transform.localScale = defaultScale;
+            collision.transform.localScale = defaultScale;  //스케일 유지
         }      
     }
 }

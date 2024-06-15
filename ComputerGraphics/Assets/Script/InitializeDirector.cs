@@ -7,7 +7,7 @@ public class InitializeDirector : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteAll(); //playerPrefs 모두 삭제
         PlayerPrefs.Save();
     }
 

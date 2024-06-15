@@ -79,7 +79,7 @@ public class PlayerController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        // 구름과 충돌했을 때 크기 유지
+        // 검은 구름과 충돌했을 때 크기 유지
         if (collision.gameObject.CompareTag("Blackcloud"))
         {
             transform.localScale = defaultScale;
@@ -88,7 +88,7 @@ public class PlayerController : MonoBehaviour
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        // 구름을 벗어났을 때도 크기 유지
+        // 검은 구름을 벗어났을 때도 크기 유지
         if (collision.gameObject.CompareTag("Blackcloud"))
         {
             transform.localScale = defaultScale;

@@ -75,6 +75,7 @@ public class differenceDirector : MonoBehaviour
             diffCheck04 == true & diffCheck05 == true)
         {
             // 게임 클리어 씬으로 이동
+            PlayerPrefs.SetInt("Japansuccess", 1);
             SceneManager.LoadScene("JapanClearScene");
         }
     }

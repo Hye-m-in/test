@@ -36,6 +36,7 @@ public class ArgDirector : MonoBehaviour
         else if (sucessful >= 6)
         {
             // 6회 성공했으므로 게임 클리어 
+            PlayerPrefs.SetInt("ARGsuccess", 1);
             SceneManager.LoadScene("ArgentinaClearScene");
         }
     }
